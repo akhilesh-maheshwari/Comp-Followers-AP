@@ -7,8 +7,10 @@ const input = await Actor.getInput();
 const {
   linkedinCompanyUrl,
   resultsFileName = 'competitors-followers-output',
-  followersCount = 5000,
+  followersCount: followersCountRaw = '5000',
 } = input;
+
+const followersCount = parseInt(followersCountRaw, 10);
 
 if (!linkedinCompanyUrl) {
   throw new Error('LinkedIn Company URL is required.');
@@ -19,12 +21,10 @@ console.log(`▶ Target followers count: ${followersCount}`);
 console.log(`▶ Output file name: ${resultsFileName}`);
 
 // ─── Your scraping logic goes here ───────────────────────────────────────────
-// Pass linkedinCompanyUrl + followersCount to your scraper
-// Push results to dataset
+// Use linkedinCompanyUrl and followersCount to drive your scraper
 // ─────────────────────────────────────────────────────────────────────────────
 
 const results = [
-  // Example structure - replace with actual scraped data
   {
     companyName: 'Example Company',
     linkedinUrl: linkedinCompanyUrl,
@@ -36,7 +36,7 @@ const results = [
 // Push to Apify dataset
 await Actor.pushData(results);
 
-// Also save as named KV store file
+// Save as named file in Key-Value Store
 const kvStore = await Actor.openKeyValueStore();
 await kvStore.setValue(resultsFileName, results, { contentType: 'application/json' });
 
