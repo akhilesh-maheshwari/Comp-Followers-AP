@@ -5,8 +5,8 @@
   "version": "0.1",
   "buildTag": "latest",
   "environmentVariables": {},
-  "dockerfile": "./Dockerfile",
-  "readme": "./README.md",
+  "dockerfile": "../Dockerfile",
+  "readme": "../README.md",
   "input": "./input_schema.json",
   "storages": {
     "dataset": {
