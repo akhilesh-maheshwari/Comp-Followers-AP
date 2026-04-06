@@ -5,12 +5,10 @@
   "description": "Scrapes LinkedIn company followers for competitor analysis",
   "main": "src/main.js",
   "scripts": {
-    "start": "node src/main.js",
-    "test": "echo \"No tests defined\""
+    "start": "node src/main.js"
   },
   "dependencies": {
-    "apify": "^3.0.0",
-    "crawlee": "^3.0.0"
+    "apify": "^3.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
