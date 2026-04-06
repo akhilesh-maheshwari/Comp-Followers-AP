@@ -1,0 +1,25 @@
+{
+  "actorSpecification": 1,
+  "name": "linkedin-competitors-followers",
+  "title": "LinkedIn Competitors Followers Scraper",
+  "version": "0.1",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Competitors Followers Results",
+      "views": {
+        "overview": {
+          "title": "Results Overview",
+          "transformation": {
+            "fields": ["companyName", "linkedinUrl", "followers", "timestamp"]
+          }
+        }
+      }
+    }
+  }
+}
