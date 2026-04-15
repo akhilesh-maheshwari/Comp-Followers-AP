@@ -6,10 +6,11 @@
   "properties": {
     "linkedinCompanyUrl": {
       "title": "LinkedIn Company URL",
-      "type": "string",
-      "description": "Please share the complete LinkedIn company URL (e.g. https://www.linkedin.com/company/apple)",
-      "editor": "textfield",
-      "pattern": "^https:\\/\\/(www\\.)?linkedin\\.com\\/company\\/[a-zA-Z0-9\\-]+\\/?.*$"
+  "type": "string",
+  "description": "Please share the complete LinkedIn company URL (e.g. https://www.linkedin.com/company/apple)",
+  "editor": "textfield",
+  "pattern": "^https:\\/\\/(www\\.)?linkedin\\.com\\/company\\/[a-zA-Z0-9\\-]+\\/?.*$",
+  "default": "https://www.linkedin.com/company/apple"
     },
     "resultsFileName": {
       "title": "Results File Name",
