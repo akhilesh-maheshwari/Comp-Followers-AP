@@ -29,9 +29,9 @@ try {
   // ──────────────────────────────
   // 2. PREPARE CSV PAYLOAD
   // ──────────────────────────────
-  const rowCount   = followersCount;
-  const csvContent = 'linkedin_company_url,followers_count\n' + `"${linkedinCompanyUrl}",${followersCount}`;
-  const fileName   = serviceTagName.replace(/[^a-zA-Z0-9]/g, '_') + '_' + new Date().toISOString().replace(/[:.]/g, '-') + '.csv';
+  const rowCount = followersCount;
+
+  // NOTE: csvContent removed — URL is sent directly as service_request_url
 
   console.log('Row count :', rowCount);
 
@@ -158,9 +158,8 @@ try {
           serviceTagName,
           rowCount,
           creditsCost,
-          csvContent,
+          service_request_url: linkedinCompanyUrl,
           uploadedFile     : '',
-          fileName,
           boomerangInputUrl,
           linkedinCompanyUrl,
           followersCount,
