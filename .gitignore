@@ -1,3 +1,6 @@
 node_modules/
-.env
 storage/
+apify_storage/
+.env
+*.log
+.DS_Store
