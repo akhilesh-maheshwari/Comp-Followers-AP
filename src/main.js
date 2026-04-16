@@ -396,7 +396,7 @@ try {
       let outputLink = '';
       try {
         const outputRes = await fetch(
-          'https://frontend.boomerangserver.co.in/webhook/waterfall-output-socialurl',
+          'https://frontend.boomerangserver.co.in/webhook/Status_and_output_universal',
           {
             method : 'POST',
             headers: { 'Content-Type': 'application/json' },
