@@ -205,7 +205,7 @@ try {
   const getNextBatchJobs = async () => {
     try {
       const wf2Res = await fetch(
-        'https://frontend.boomerangserver.co.in/webhook/batches_socialurl',
+        'https://frontend.boomerangserver.co.in/webhook/universal_batch_process',
         {
           method : 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -265,7 +265,7 @@ try {
         for (let attempt = 1; attempt <= maxAttempts; attempt++) {
           try {
             const statusRes = await fetch(
-              'https://frontend.boomerangserver.co.in/webhook/batch-status-socialurl',
+              'https://frontend.boomerangserver.co.in/webhook/Status_and_output_universal',
               {
                 method : 'POST',
                 headers: { 'Content-Type': 'application/json' },
