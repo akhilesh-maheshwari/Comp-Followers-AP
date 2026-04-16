@@ -11,7 +11,7 @@ try {
   const linkedinCompanyUrl = input.linkedinCompanyUrl || '';
   const serviceTagName     = input.resultsFileName    || 'competitors-followers-output';
   const followersCount     = parseInt(input.followersCount || '5000', 10);
-  const serviceName        = 'LinkedIn Company Follower Scraper';
+  const serviceName        = 'LinkedIn competitors Follower Scraper';
   const serviceOption1     = 'linkedin-followers';
   const requestSource      = 'LinkedIn_Follower_Scraper_AP';
   const boomerangInputUrl  = 'https://s1.boomerangserver.co.in/webhook/private-follower-scraper';
