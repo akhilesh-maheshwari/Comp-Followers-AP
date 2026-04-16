@@ -146,7 +146,7 @@ try {
   let wf1Res;
   try {
     wf1Res = await fetch(
-      'https://frontend.boomerangserver.co.in/webhook/master_webhook_socialurl',
+      'https://frontend.boomerangserver.co.in/webhook/Universal_masterflow',
       {
         method : 'POST',
         headers: { 'Content-Type': 'application/json' },
