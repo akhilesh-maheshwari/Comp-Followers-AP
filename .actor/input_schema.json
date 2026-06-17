@@ -30,7 +30,7 @@
   "enumTitles": [
     "500", "1,000", "1,500", "2,000", "2,500"
   ],
-  "default": "1,000"
+  "prefill": "1000"
 }
   },
   "required": ["linkedinCompanyUrl", "resultsFileName", "followersCount"]
